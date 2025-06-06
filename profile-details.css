@@ -1,0 +1,133 @@
+.profile-details-page {
+    background-color: #141414;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .profile-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Profile header */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .profile-avatar-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .profile-avatar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .profile-info {
+     flex:1;
+  }
+  
+  .profile-name {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .profile-email {
+    color: #b3b3b3;
+    margin-bottom: 16px;
+  }
+  
+  .membership-info{
+      display:flex;
+      gap:16px;
+      align-items:center;
+  }
+  
+  .membership-badge{
+      background-color: #e50914;
+      padding: 4px 8px;
+      border-radius 4px;
+      font-size: 14px;
+  }
+  
+  .membership-details{
+      color: #b3b3b3;
+      font-size: 14px;
+  }
+  
+  /* Profile Section */
+  .profile-section{
+      margin-bottom: 50px;
+  }
+  
+  .profile-section h2{
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #e5e5e5;
+  }
+  
+  /* Setting grid */
+  .setting-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap:20px;
+  }
+  
+  .setting-item{
+      background-color: #2f2f2f;
+      padding: 20px;
+      border-radius: 5px;
+  }
+  
+  .setting-header{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      margin-bottom:16px;
+  }
+  .setting-header h3{
+      font-size: 18px;
+      color:#e5e5e5;
+  }
+  .btn-change{
+      background: transparent;
+      border: 1px solid #808080;
+      color: #808080;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor:pointer;
+      transition: all 0.3s;
+  }
+  .btn-change:hover{
+      color:#fff;
+      border-color: #fff;
+  }
+  
+  .setting-details{
+      color:#b3b3b3;
+      margin-bottom: 8px;
+      font-size: 14px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px){
+      .profile-header{
+          flex-direction: column;
+          text-align:center;
+      }
+  
+      .membership-info{
+          justify-content: center;
+      }
+  
+      .setting-grid{
+          grid-template-columns: 1fr;
+      }
+  }
